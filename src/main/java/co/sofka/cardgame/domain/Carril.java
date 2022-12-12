@@ -29,4 +29,18 @@ public class Carril {
     public Integer numero() {
         return numero;
     }
+
+    public List<Carro> carros() {
+        return carros;
+    }
+
+    public Integer progresoCarro(String placa) {
+        for(Carro carro : this.carros) {
+            if (carro.placa().equalsIgnoreCase(placa)) {
+                int metros = kilometros()*1000;
+                return (100*carro.metros())/metros;
+            }
+        }
+        throw new IllegalArgumentException("No existe el carro");
+    }
 }
