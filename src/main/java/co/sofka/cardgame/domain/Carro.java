@@ -42,7 +42,7 @@ public class Carro {
 
     public void pararMarcha() {this.estaEnMarcha = false;}
 
-    public double metros() {
+    public Integer metros() {
         return metros;
     }
 

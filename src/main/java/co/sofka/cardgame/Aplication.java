@@ -27,7 +27,7 @@ public class Aplication {
         juego.agregarCarroACarril(1, rojo);
         juego.agregarCarroACarril(2, azul);
         juego.agregarCarroACarril(3, verde);
-        juego.agregarCarroACarril(4, blanco);
+        juego.agregarCarroACarril(1, blanco);
 
         Podium podium = juego.iniciarJuego();
         System.out.println(podium);
